@@ -1,10 +1,12 @@
 # docker-volume-snapshot
 Docker volume snapshot utility command
 
+## matatata fork
+preserve xattrs and acls
 
 ## Installation
 ```sh
-sudo curl -SL https://raw.githubusercontent.com/junedkhatri31/docker-volume-snapshot/main/docker-volume-snapshot -o /usr/local/bin/docker-volume-snapshot
+sudo curl -SL https://raw.githubusercontent.com/matatata/docker-volume-snapshot/main/docker-volume-snapshot -o /usr/local/bin/docker-volume-snapshot
 ```
 ```sh
 sudo chmod +x /usr/local/bin/docker-volume-snapshot
