@@ -26,7 +26,7 @@ case "$1" in
         directory=`dirname "$3"`
         if [ "$directory" == "." ]; then directory=$(pwd); fi
         filename=`basename "$3"`
-        docker run --rm -v "$2:/source" -v "$directory:/dest" debian:bookworm-slim tar --xattrs --acls cvaf "/dest/$filename" -C /source .
+        docker run --rm -v "$2:/source" -v "$directory:/dest" debian:bookworm-slim tar --xattrs --acls -cvaf "/dest/$filename" -C /source .
         ;;
     "restore")
         if [[ -z "$2" || -z "$3" ]]; then display_usage; exit 1; fi
